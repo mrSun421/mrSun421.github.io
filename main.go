@@ -15,4 +15,13 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to write to index file: %v\n", err)
 	}
+	portfolio_f, err := os.Create("portfolio.html")
+	if err != nil {
+		log.Fatalf("Failed to create portfolio file: %v\n", err)
+	}
+	err = portfolio().Render(context.Background(), portfolio_f)
+	if err != nil {
+		log.Fatalf("Failed to write to portfolio file: %v\n", err)
+	}
+	log.Printf("All done!")
 }

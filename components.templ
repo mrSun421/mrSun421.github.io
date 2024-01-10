@@ -17,7 +17,7 @@ templ layout() {
 	<nav class="navbar is-primary">
 		<div class="container">
 			<div class="navbar-brand">
-				<a href="/" class="navbar-item" style="max-height: unset;">
+				<a href="index.html" class="navbar-item" style="max-height: unset;">
 					<figure class="image">
 						<img class="is-rounded" src="static/logo.png" alt="Logo" />
 					</figure>
@@ -30,7 +30,7 @@ templ layout() {
 			</div>
 			<div id="navbarMenuHeroC" class="navbar-menu">
 				<div class="navbar-end">
-					<a href="index.html" class="navbar-item is-active">Home</a>
+					<a href="index.html" class="navbar-item">Home</a>
 					<a href="https://docs.google.com/document/d/1uygfhfaQnfB5B7XIc7TnT5iZkxFJCMMa/edit?usp=sharing&ouid=114661167312388415306&rtpof=true&sd=true"
 						class="navbar-item">
 						<span class="icon-text">
@@ -205,5 +205,56 @@ templ index() {
 
 templ portfolio() {
 @layout() {
+<section class="hero is-halfheight is-primary">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<h1 class="title is-size-1">{ `Things I've made/worked on.` }</h1>
+			<h2 class="subtitle is-size-2">
+				More can be found on Github.
+			</h2>
+			<h3 class="subtitle is-size-3">
+				Link Below.
+			</h3>
+			<a href="https://github.com/mrSun421" class="button icon-text is-link">
+				<span class="icon">
+					<i class="fa-brands fa-github"></i>
+				</span>
+				<span>Github</span>
+			</a>
+		</div>
+	</div>
+</section>
+<section class="section is-large">
+	<article class="media">
+		<figure class="media-left">
+			<a href="https://birthday-reminder-mrsun.fly.dev/">
+				<figure class="image">
+					<img src="static/birthday-screenshot-resize.png" alt="Image of Me!"
+						width="25%" />
+				</figure>
+			</a>
+		</figure>
+		<div class="media-content is-size-5">
+			<div class="content has-text-centered">
+				<h1>Birthday Reminder</h1>
+				<p>
+					A CRUD website to remind users of their friend's or family's birthdays through
+					email.
+				</p>
+				<p>
+					Used Google's OAuth2 API for authentication, go's standard library to HTML
+					routing and handling, and HTMX for AJAX requests on the page.
+				</p>
+				<p>
+					uses a Postgres DB on the backend.
+				</p>
+				<p>
+					Currently hosted at <a
+						href="https://birthday-reminder-mrsun.fly.dev/">birthday-reminder-mrsun.fly.dev</a>.
+				</p>
+			</div>
+		</div>
+	</article>
+</section>
 }
 }
