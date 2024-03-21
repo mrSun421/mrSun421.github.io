@@ -59,7 +59,7 @@ func layout() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</a> <a href=\"https://drive.google.com/file/d/1kpc2z13aYN611jc1Ard0xEM1g1Pbl9kB/view?usp=sharing\" class=\"navbar-item\"><span class=\"icon-text\"><span class=\"icon\"><i class=\"fa-brands fa-readme\"></i></span> <span>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</a> <a href=\"https://drive.google.com/file/d/1q-tkBzzMB5ZCdSJ3ovGKNmjbpzyStgdT/view?usp=sharing\" class=\"navbar-item\"><span class=\"icon-text\"><span class=\"icon\"><i class=\"fa-brands fa-readme\"></i></span> <span>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
